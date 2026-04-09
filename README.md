@@ -12,19 +12,6 @@ Le moteur de recherche est écrit en **C++17** (performances maximales), exposé
 
 ---
 
-## Algorithmes implémentés
-
-| Algorithme | Garantit le chemin optimal ? | Complexité temps | Idéal pour |
-|------------|:---:|---|---|
-| BFS | ✅ Oui (grille uniforme) | O(V + E) | Grilles simples, chemin le plus court en nombre de cases |
-| DFS | ❌ Non | O(V + E) | Exploration exhaustive, labyrinthe sans cycles |
-| Dijkstra | ✅ Oui | O((V + E) log V) | Graphes pondérés, base de A* |
-| **A\*** | ✅ Oui | O((V + E) log V) | **Robotique, GPS, jeux vidéo** |
-
-> **Lien avec mes projets embarqués :** A* est l'algorithme utilisé dans les robots autonomes réels pour la navigation. Mon robot suiveur de ligne (STM32 + capteurs IR/ultrason) applique une logique similaire de prise de décision locale — ce projet en est la visualisation théorique complète.
-
----
-
 ## Installation
 
 ### Prérequis
